@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sql-wi-deployment
+  namespace: sql-wi-test
+  labels:
+    app: sql-wi
+    azure.workload.identity/use: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sql-wi
+  template:
+    metadata:
+      labels:
+        app: sql-wi
+    spec:
+      serviceAccountName: "sa-sql-wi"
+      containers:
+      - name: sql-wi
+        image: ariantestacr001.azurecr.io/sql-witest:1.0.0
+        imagePullPolicy: Always
+        # ports:
+        # - containerPort: 8080
