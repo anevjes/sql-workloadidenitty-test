@@ -1,7 +1,8 @@
 # update conneciton string / sql query in porgram.cs
 
 
-Update below line with your own db server and User details. Make sure to use ObjectIdofManagedIdneity for user and not clientId.
+Update below line with your own db server and User details. Make sure to use ClinetID od Managed Idenitty(userAssigned) as we are on > version 5.1.5 of Microsoft.Data.SqlClient. Link:
+https://learn.microsoft.com/en-us/sql/connect/ado-net/sql/azure-active-directory-authentication?view=sql-server-ver16
 ```
    var connectionString = "Server=demo.database.windows.net; Authentication=Active Directory Managed Identity; Encrypt=True; User Id=ObjectIdOfManagedIdentity; Database=testdb";
 
