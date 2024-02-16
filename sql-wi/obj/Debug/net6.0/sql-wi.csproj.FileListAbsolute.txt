@@ -49,3 +49,4 @@ C:\Users\anevjes\sql-workloadidenitty-test\sql-wi\obj\Debug\net6.0\refint\sql-wi
 C:\Users\anevjes\sql-workloadidenitty-test\sql-wi\obj\Debug\net6.0\sql-wi.pdb
 C:\Users\anevjes\sql-workloadidenitty-test\sql-wi\obj\Debug\net6.0\sql-wi.genruntimeconfig.cache
 C:\Users\anevjes\sql-workloadidenitty-test\sql-wi\obj\Debug\net6.0\ref\sql-wi.dll
+C:\Users\anevjes\sql-workloadidenitty-test\sql-wi\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll

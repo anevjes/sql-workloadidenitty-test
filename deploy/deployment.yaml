@@ -11,10 +11,12 @@ spec:
   selector:
     matchLabels:
       app: sql-wi
+      azure.workload.identity/use: "true"
   template:
     metadata:
       labels:
         app: sql-wi
+        azure.workload.identity/use: "true"
     spec:
       serviceAccountName: "sa-sql-wi"
       containers:
